@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=Flatpak For Reborn
+Exec=/usr/bin/flatpak.sh
+GenericName=Flatpak Installer
+Icon=/usr/share/icons/default/reborn-updates.svg
+Name=Flatpak Installer
+Name[en_US]=Flatpak Installer
+Terminal=False
+Type=Application
+Categories=System;
+NoDisplay=false

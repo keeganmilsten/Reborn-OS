@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=refresh.desktop
+Comment=Updates pacman repos at first boot.
+Exec=/usr/bin/internet.sh
+GenericName=Repository Updater
+Terminal=false
+NoDisplay=true
+X-DEEPIN-Autostart-enabled=true
+X-GNOME-Autostart-enabled=true

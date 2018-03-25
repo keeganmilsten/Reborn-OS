@@ -1,0 +1,15 @@
+[Unit]
+Description=Light Display Manager
+Documentation=man:lightdm(1)
+After=dev-dri-card0.device systemd-user-sessions.service getty@tty1.service vboxservice.service livecd.service pacman-init.service
+
+[Service]
+ExecStart=/usr/bin/lightdm
+Restart=always
+IgnoreSIGPIPE=no
+BusName=org.freedesktop.DisplayManager
+StartLimitAction=none
+RestartSec=2
+
+[Install]
+Alias=display-manager.service

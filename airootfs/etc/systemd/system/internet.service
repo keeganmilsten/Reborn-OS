@@ -1,0 +1,10 @@
+[Unit]
+Description=script that requires network
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/internet.sh
+
+[Install]
+WantedBy=multi-user.target

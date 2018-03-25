@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Flatpak Support
+Exec=flatpak.sh
+Icon=/usr/share/icons/default/reborn-updates.svg
+NoDisplay=true

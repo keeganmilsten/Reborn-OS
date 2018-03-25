@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#
+#~/.xsession
+#
+# Executed at login
+#
+
+/bin/bash --login -l ~/.xinitrc

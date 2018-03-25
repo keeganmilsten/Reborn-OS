@@ -1,0 +1,14 @@
+[com.solus-project.budgie-panel.instance.icon-tasklist.{238a62be-cd2a-11e7-99ca-e4029b348cee}]
+
+pinned-launchers=['org.gnome.Nautilus.desktop', 'chromium', 'org.gnome.Software.desktop']
+
+[org.gnome.desktop.interface]
+gtk-theme='EvoPop'
+icon-theme='Flat Remix'
+
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/gnome/Bokeh_Tails.jpg'
+
+[com.solus-project.icon-tasklist]
+pinned-launchers=['org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'chromium.desktop']
+
