@@ -57,3 +57,6 @@ To rebuild the ISO, simply remove the `build` folder in addition to emptying the
 
 - Run `rsync -v --progress -e ssh /home/$USER/reborn/out/Reborn-OS-2017.12.13-x86_64.iso keeganmm@frs.sourceforge.net:/home/frs/project/antergos-deepin/
 `
+
+### Upload Reborn OS to Github (note for Reborn OS team)
+- Follow the instructions found here: https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/
