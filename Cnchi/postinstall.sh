@@ -340,6 +340,9 @@ postinstall() {
         rm ${CN_DESTDIR}/etc/lightdm/lightdm.conf
         cp /etc/lightdm/lightdm.conf ${CN_DESTDIR}/etc/lightdm/
         chroot ${CN_DESTDIR} sudo pacman -Rdd deepin-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -351,6 +354,9 @@ postinstall() {
     if [[ gnome = "${CN_DESKTOP}" ]]; then
         chroot ${CN_DESTDIR} systemctl -fq enable gdm
         chroot ${CN_DESTDIR} sudo pacman -Rdd gnome-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -363,6 +369,9 @@ postinstall() {
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd kde-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -381,6 +390,9 @@ postinstall() {
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd budgie-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -393,6 +405,9 @@ postinstall() {
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd i3-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -405,6 +420,9 @@ postinstall() {
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd enlightenment-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -417,6 +435,9 @@ postinstall() {
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd lxqt-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -431,6 +452,9 @@ postinstall() {
         chmod go=rx ${CN_DESTDIR}/var/lib/lightdm-data
         chroot ${CN_DESTDIR} systemctl -fq enable lxdm
         chroot ${CN_DESTDIR} sudo pacman -Rdd openbox-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -443,6 +467,9 @@ postinstall() {
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd mate-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -455,6 +482,9 @@ if [[ xfce = "${CN_DESKTOP}" ]]; then
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd xfce-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
@@ -467,6 +497,9 @@ if [[ cinnamon = "${CN_DESKTOP}" ]]; then
         chroot ${CN_DESTDIR} systemctl -fq enable sddm
         cp /usr/share/cnchi/sddm.conf ${CN_DESTDIR}/etc/
         chroot ${CN_DESTDIR} sudo pacman -Rdd cinnamon-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd common-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd graphic-cosmic-reborn --noconfirm
+        chroot ${CN_DESTDIR} sudo pacman -Rdd base-cosmic-reborn --noconfirm
         cp /usr/share/cnchi/flatpak.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon.sh ${CN_DESTDIR}/usr/bin/
         cp /usr/share/cnchi/pkcon2.sh ${CN_DESTDIR}/usr/bin/
