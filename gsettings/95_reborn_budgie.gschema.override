@@ -4,7 +4,7 @@ pinned-launchers=['org.gnome.Nautilus.desktop', 'chromium', 'org.gnome.Software.
 
 [org.gnome.desktop.interface]
 gtk-theme='EvoPop'
-icon-theme='Flat Remix'
+icon-theme='Flat-Remix'
 
 [org.gnome.desktop.background]
 picture-uri='file:///usr/share/backgrounds/gnome/Bokeh_Tails.jpg'
