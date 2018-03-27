@@ -50,7 +50,7 @@ ICON_NAMES = {
 #    'graphics': 'apps.com.pixlr',
     'graphics': 'accessories-painting',
     'gtk-play': 'applications-games',
-    'inex': 'hardinfo',
+    'hardinfo': 'hardinfo',
     'qt-play': 'applications-games',
     'maintenance': 'baobab',
     'movie': 'artemanufrij.screencast',
@@ -65,8 +65,6 @@ ICON_NAMES = {
     'sshd': 'gnome-mime-x-directory-smb-share',
     'spotify': 'spotify-client',
 #    'skype': 'skype',
-    'transmission-gtk': 'transmission-gtk',
-    'transmission-qt': 'transmission-qt',
     'visual': 'video-display',
     'vivaldi': 'vivaldi',
     'vlc': 'vlc',
@@ -97,7 +95,7 @@ TITLES = {
     'games': _("Steam + PlayonLinux"),
     'gtk-play': _("Popular Games for Linux"),
     'qt-play': _("Popular Games for Linux"),
-    'inex': _("Hardware Analysis"),
+    'hardinfo': _("Hardware Analysis"),
     'maintenance': _("Applications to Perform System Maintenance"),
     'movie': _("Common Video Editing Programs for Linux"),
     'graphics': _("Common Photo editing Programs for Linux"),
@@ -109,8 +107,6 @@ TITLES = {
     'sshd': _("Windows sharing SMB"),
 #    'skype': _("Skype"),
     'spotify': _("Spotify"),
-    'transmission-gtk': _("Torrent Client"),
-    'transmission-qt': _("Torrent Client"),
     'visual': _("Visual Effects"),
     'vlc': _("VLC"),
     'wallpapers': _("Wallpapers Cycler"),
@@ -135,7 +131,7 @@ DESCRIPTIONS = {
     'graphic_drivers': _("Installs AMD or Nvidia proprietary graphic driver."),
     'games': _("Installs Steam and Playonlinux for gaming enthusiasts."),
     'gtk-play': _("Popular games for Linux, all created for use on your Desktop Environment"),
-    'inex': _("Easy application for extensive hardware analysis"),
+    'hardinfo': _("Easy application for extensive hardware analysis"),
     'qt-play': _("Popular games for Linux, all created for use on your Desktop Environment"),
     'maintenance': _("Common Applications to Perform System Maintenance On Linux"),
     'movie': _("Common video editing programs for Linux"),
@@ -151,8 +147,6 @@ DESCRIPTIONS = {
     'sshd': _("Provides client access to shared files and printers."),
  #   'skype': _("A User Friendly Video Chat Tool Made By Microsoft"),
     'spotify': _("A widely popular music, podcast, and video streaming service"),
-    'transmission-gtk': _("Torrent client created with your desktop in mind"),
-    'transmission-qt': _("Torrent client created with your desktop in mind"),
     'nemo': _("Default file manager for the Cinnamon desktop."),
     'wallpapers': _("Wallpapers Cycler That Changes Wallpapers Every Day"),
     'wine': _("Run Common Windows Programs on Linux Easily"),
@@ -222,7 +216,7 @@ TOOLTIPS = {
     'gtk-play': _("Popular games for Linux, ranging from complex games like 0 A.D,\n"
                   "Battle for Wesnoth, and Super Tux to basics like Solitaire,\n"
                   "Mines, and Soduku - all tailored for a gtk environemt"),
-    'inex': _("Simple application for hardware analysis and system benchmarking.\n"
+    'hardinfo': _("Simple application for hardware analysis and system benchmarking.\n"
                   "Through this, you can easily view all of your system specs without\n"
                   "having to revert to the commandline."),
     'qt-play': _("Popular games for Linux, ranging from complex games like 0 A.D,\n"
@@ -273,10 +267,6 @@ TOOLTIPS = {
                  "It offers millions of songs and sound tracks, all available for free.\n"
                  "However, a paid subscription is required to download the songs and listen to them\n"
                  "offline."),
-    'transmission-gtk': _("Installs Transmission, a BitTorrent client that allows you to\n"
-                          "perform downloads faster and with ease."),
-    'transmission-qt': _("Installs Transmission, a BitTorrent client that allows you to\n"
-                          "perform downloads faster and with ease."),
     'visual': _("Compton is a lightweight, standalone composite manager,\n"
                 "suitable for use with window managers that do not natively\n"
                 "provide compositing functionality. Compton itself is a fork\n"

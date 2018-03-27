@@ -145,34 +145,6 @@ make_cnchi() {
 }
 ########################################################################################
 
-make_cnchi_git() {
-    echo
-    echo ">>> Warning! Installing Cnchi Installer from GIT (${CNCHI_GIT_BRANCH} branch)"
-    git clone https://github.com/keeganmilsten/Cnchi cnchi-${CNCHI_GIT_BRANCH}
-    CNCHI_SRC="${script_path}/cnchi-${CNCHI_GIT_BRANCH}"
-	(cd ${script_path}/cnchi-${CNCHI_GIT_BRANCH}/;  git checkout 0.14.x)
-        install -d ${work_dir}/${arch}/airootfs/usr/share/{cnchi,locale}
-	install -Dm755 "${CNCHI_SRC}/bin/cnchi" "${work_dir}/${arch}/airootfs/usr/bin/cnchi"
-	install -Dm755 "${CNCHI_SRC}/cnchi.desktop" "${work_dir}/${arch}/airootfs/usr/share/applications/cnchi.desktop"
-	install -Dm644 "${CNCHI_SRC}/data/images/antergos/antergos-icon.png" "${work_dir}/${arch}/airootfs/usr/share/pixmaps/cnchi.png"
-    # TODO: This should be included in Cnchi's src code as a separate file
-    # (as both files are needed to run cnchi)
-    sed -r -i 's|\/usr.+ -v|pkexec /usr/share/cnchi/bin/cnchi -s bugsnag|g' "${work_dir}/${arch}/airootfs/usr/bin/cnchi"
-    for i in ${CNCHI_SRC}/cnchi ${CNCHI_SRC}/bin ${CNCHI_SRC}/data ${CNCHI_SRC}/scripts ${CNCHI_SRC}/ui; do
-        cp -R ${i} "${work_dir}/${arch}/airootfs/usr/share/cnchi/"
-    done
-    for files in ${CNCHI_SRC}/po/*; do
-        if [ -f "$files" ] && [ "$files" != 'po/cnchi.pot' ]; then
-            STRING_PO=`echo ${files#*/}`
-            STRING=`echo ${STRING_PO%.po}`
-            mkdir -p ${work_dir}/${arch}/airootfs/usr/share/locale/${STRING}/LC_MESSAGES
-            msgfmt $files -o ${work_dir}/${arch}/airootfs/usr/share/locale/${STRING}/LC_MESSAGES/cnchi.mo
-            echo "${STRING} installed..."
-            echo "CNCHI IS NOW BUILT"
-        fi
-    done
-}
-
 make_fixes() {
 	# Remove Antergos gsettings file
 #	rm ${work_dir}/${arch}/airootfs/usr/share/glib-2.0/schemas/90_deepin-default-gsettings.gschema.override
@@ -201,9 +173,10 @@ echo "Copying correct sddm.conf file over"
 cp ${script_path}/airootfs/etc/sddm.conf ${work_dir}/${arch}/airootfs/etc/
 echo "DONE"
 #Copy Antergos Mirrorlist
-echo "Setting up Antergos Mirrorlist"
+echo "Setting up Antergos and Reborn Mirrorlist"
 mkdir -p ${work_dir}/${arch}/airootfs/etc/pacman.d
 cp ${script_path}/airootfs/etc/antergos-mirrorlist ${work_dir}/${arch}/airootfs/etc/pacman.d/
+cp ${script_path}/airootfs/etc/reborn-mirrorlist ${work_dir}/${arch}/airootfs/etc/pacman.d/
 echo "DONE"
 #Copy pacman-init.service over
 echo "Copying pacman-init.service"

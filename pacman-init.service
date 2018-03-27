@@ -8,7 +8,7 @@ Requires=etc-pacman.d-gnupg.mount network.target
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
-ExecStart=/usr/bin/pacman-key --populate archlinux antergos
+ExecStart=/usr/bin/pacman-key --populate archlinux antergos rebornos
 
 [Install]
 WantedBy=multi-user.target

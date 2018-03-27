@@ -7,7 +7,7 @@ gtk-theme='EvoPop'
 icon-theme='Flat-Remix'
 
 [org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/gnome/Bokeh_Tails.jpg'
+picture-uri='file:///usr/share/backgrounds/abstract1-reborn2.png'
 
 [com.solus-project.icon-tasklist]
 pinned-launchers=['org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'chromium.desktop']

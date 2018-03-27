@@ -10,6 +10,7 @@
                 <pkgname>base</pkgname>
                 <pkgname>base-devel</pkgname>
                 <pkgname>aurarchlinux-keyring</pkgname>
+                <pkgname>rebornos-keyring</pkgname>
             </packages>
         </edition>
 
@@ -120,8 +121,6 @@
         <edition name="Budgie" description="Solus desktop">
             <packages>
                 <pkgname>budgie-cosmic-reborn</pkgname>
-                <pkgname>sddm-theme-gracilis-git</pkgname>
-                <pkgname>sddm-config-editor-git</pkgname>
             </packages>
         </edition>
 
@@ -277,8 +276,8 @@
             <pkgname>rawtherapee</pkgname>
             <pkgname>darktable</pkgname>
         </feature>
-        <feature name="inex">
-            <pkgname>i-nex</pkgname>
+        <feature name="hardinfo">
+            <pkgname>hardinfo</pkgname>
         </feature>
         <feature name="maintenance">
             <pkgname>bleachbit</pkgname>
@@ -300,12 +299,6 @@
         </feature>
         <feature name="spotify">
             <pkgname>spotify</pkgname>
-        </feature>
-        <feature name="torrent-gtk">
-            <pkgname>transmission-gtk</pkgname>
-        </feature>
-        <feature name="torrent-qt">
-            <pkgname>transmission-qt</pkgname>
         </feature>
         <feature name="email">
             <pkgname>thunderbird</pkgname>

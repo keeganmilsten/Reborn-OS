@@ -1,3 +1,5 @@
+aurarchlinux-keyring
+rebornos-keyring
 b43-fwcutter
 btrfs-progs
 clonezilla
@@ -60,7 +62,6 @@ xl2tpd
 zd1211-firmware
 
 
-aurarchlinux-keyring
 base
 base-devel
 common-cosmic-reborn
@@ -102,6 +103,7 @@ sddm-theme-gracilis-git
 
 
 flatplat-blue-theme
+flat-remix-git
 
 
 

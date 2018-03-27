@@ -3,7 +3,7 @@ wget --spider www.google.com
 if [ "$?" = 0 ]; then
   sudo pacman -Syy
   sudo pacman-key --init
-  sudo pacman-key --populate archlinux antergos aurarchlinux rebornos
+  sudo pacman-key --populate archlinux antergos aurarchlinux
   sudo pacman-key --refresh-keys
   sudo pacman -Syy
   reflector --verbose --latest 10 --sort rate --save /etc/pacman.d/mirrorlist

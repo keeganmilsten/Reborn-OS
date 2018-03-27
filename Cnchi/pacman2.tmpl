@@ -27,7 +27,8 @@ Include = /etc/pacman.d/mirrorlist
 Include = /etc/pacman.d/antergos-mirrorlist
 
 [Reborn-OS]
-Server = https://repo.itmettke.de/Reborn-OS/
+SigLevel = Optional TrustAll
+Include = /etc/pacman.d/reborn-mirrorlist
 
 [aur-archlinux] 
 Server = https://repo.itmettke.de/aur/$repo/$arch
